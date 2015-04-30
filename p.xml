@@ -1,1 +1,28 @@
-<xml xmlns="http://www.w3.org/1999/xhtml"></xml>
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <block type="controls_if" id="273" inline="false" x="-18" y="216">
+    <value name="IF0">
+      <block type="sensor_button" id="258">
+        <field name="OBJECT">ENTER</field>
+      </block>
+    </value>
+    <statement name="DO0">
+      <block type="multimedia_playwav" id="385">
+        <field name="WAV">popo</field>
+      </block>
+    </statement>
+    <next>
+      <block type="controls_repeat" id="377" inline="true">
+        <value name="TIMES">
+          <block type="math_number" id="384">
+            <field name="NUM">3</field>
+          </block>
+        </value>
+        <statement name="DO">
+          <block type="multimedia_playwav" id="251">
+            <field name="WAV">popo</field>
+          </block>
+        </statement>
+      </block>
+    </next>
+  </block>
+</xml>
